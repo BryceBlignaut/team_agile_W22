@@ -15,7 +15,7 @@ We propose to leverage SafeGraph data, United States Census data, and highway ex
 
 ### Business Needs
 
-Businesses who's primary business comes through physical storefronts needs to be able to expand if the want to grow. Our predictive model will be able to give them location suggestions of where they would be likely to succeed. This will be of value to a business because it will help lower risk and maximize profit. 
+Businesses who's primary business comes through physical storefronts needs to be able to expand if the want to grow. Our predictive model will be able to give them location suggestions of where they would be likely to succeed. This will be of value to a business because it will help lower the risk of new under-performing locations and maximize in-person traffic.
 
 ### SafeGraph Data Usage
 
@@ -39,11 +39,22 @@ popularity_by_hour
 popularity_by_day  
 normalized_visits_by_total_visits  
 
-[-- Visualizations here --]
+As our project develops, we may end up using more than just the above mentioned.
+
+The following visualization was produced using United States Census data that we will be leveraging in our project. This shows some of the data and how we want to use it
+
+![](image.png)
+<b>Average income by Census Block in Madison County: 2014-2018</b>  
+
+
+The following visualization uses SafeGraph data to show the regions with the highest average number of visitors per location. The total number of visitors was divided by the number of locations in each region.
+
+![](visualization.png)
+<b>Average Number of Chipotle Visitors per Location by Region: December 2021</b>
 
 ### Other Data Usage
 
-By connecting to United States Census data, we'll be able to determine average and median demographic statistics for each Census block, which we'll be able to join to the visitor data to be able to tell demographic data for customers. We'll also use a highway exit dataset to provide additional POI location context.
+By connecting to United States Census data, we'll be able to determine average and median demographic statistics for each Census block, which we'll be able to join to the visitor data to be able to tell demographic data for customers and businesses. We'll also use a highway exit dataset to provide additional POI location context.
 
 ### Definition of a Successful Project
 
