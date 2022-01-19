@@ -43,13 +43,13 @@ As our project develops, we may end up using more than just the above mentioned.
 
 The following visualization was produced using United States Census data that we will be leveraging in our project. This shows some of the data and how we want to use it
 
-![](image.png)
+![](image.png)  
 <b>Average income by Census Block in Madison County: 2014-2018</b>  
 
 
 The following visualization uses SafeGraph data to show the regions with the highest average number of visitors per location. The total number of visitors was divided by the number of locations in each region.
 
-![](visualization.png)
+![](visualization.png)  
 <b>Average Number of Chipotle Visitors per Location by Region: December 2021</b>
 
 ### Other Data Usage
