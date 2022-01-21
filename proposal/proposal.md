@@ -39,6 +39,8 @@ popularity_by_hour
 popularity_by_day  
 normalized_visits_by_total_visits  
 
+We will also be using the SafeGraph Core dataset.
+
 As our project develops, we may end up using more than just the above mentioned.
 
 The following visualization was produced using United States Census data that we will be leveraging in our project. This shows some of the data and how we want to use it
