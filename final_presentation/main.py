@@ -9,7 +9,7 @@ map = st.container()
 
 @st.cache
 def get_data():  # load in the data
-    data = pd.read_csv("..\data\model_export\export.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/BryceBlignaut/team_agile_W22/master/data/model_export/export.csv")
     return data
 
 st.markdown(
