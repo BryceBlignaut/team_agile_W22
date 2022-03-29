@@ -40,7 +40,7 @@ with map:
 
     st.write("Feel free to explore the map below to see where you should start building.")
 
-    df = data[["tract","region","county_name","city","total_visits", "avg_income","total_businesses","lat","lon","diff"]]
+    df = data[["tract","region","county_name","city","total_visits", "avg_income","total_businesses","lat","lon","diff", "should_build"]]
 
     value_selected = False
 
@@ -63,7 +63,7 @@ with map:
             value_selected = True
 
     # st.map(df) #This is the basic map. Can't change colors. But it looks nice by itself. And it filters way nice
-
+    st.write("The more green an area is, the more growth potential there")
     #IDK about the colors in this map. But it works.
     st.pydeck_chart(pdk.Deck(
         map_style='mapbox://styles/mapbox/light-v10',
@@ -82,7 +82,7 @@ with map:
                 auto_highlight=True,
                 pickable=True,
                 get_radius=1000,
-                get_fill_color=['diff < 0 ? diff * -255 : 0', 0, 'diff > 0 ? diff * 255 : 0', 160],
+                get_fill_color=['diff < 0 ? diff * -255 : 0', 'diff > 0 ? diff * 255 : 0', 0, 160],
                 coverage=1,
                 radius_min_pixels=3,
                 radius_max_pixels=5)
@@ -92,4 +92,4 @@ with map:
     if value_selected:    
         st.write("What makes these places a great place to build?")
 
-        st.table(df[["tract","region","county_name","city","total_visits", "avg_income","total_businesses"]])
+        st.write(df[["tract","region","county_name","city","total_visits", "avg_income","total_businesses", "should_build"]])
