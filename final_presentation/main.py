@@ -86,7 +86,13 @@ with map:
                 coverage=1,
                 radius_min_pixels=3,
                 radius_max_pixels=5)
-        ]
+        ], # Added a tooltip here
+        tooltip={
+        'html': '<b>Difference:</b> {diff}',
+        'style': {
+            'color': 'white'
+        }
+    }
     ))
 
     if value_selected:    
