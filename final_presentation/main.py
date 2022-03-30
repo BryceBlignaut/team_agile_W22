@@ -77,7 +77,7 @@ with map:
         layers=[
             pdk.Layer(
                 'ScatterplotLayer',
-                data=df[['lat','lon','diff']].dropna(),
+                data=df[['lat','lon','diff','tract']].dropna(),
                 get_position=['lon', 'lat'],
                 auto_highlight=True,
                 pickable=True,
@@ -88,7 +88,7 @@ with map:
                 radius_max_pixels=5)
         ], # Added a tooltip here
         tooltip={
-        'html': '<b>Difference:</b> {diff}',
+        'html': '<b>Tract:</b> {tract}',
         'style': {
             'color': 'white'
         }
